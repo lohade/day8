@@ -12,10 +12,10 @@ public class Main {
         System.out.println("enter second coordinate:");
         int x2=sc.nextInt();
         int y2=sc.nextInt();
-        double square_length_of_x=(double)((x2-x1)*(x2-x1));
-        double square_length_of_y=(double)((y2-y1)*(y2-y1));
-        double length_of_line=Math.sqrt(square_length_of_x-square_length_of_y);
-        System.out.println(+length_of_line);
+        float square_length_of_x=(float)(Math.pow((x2-x1),2));
+        float square_length_of_y=(float)(Math.pow((y2-y1),2));
+        double length_of_line=Math.sqrt(square_length_of_x+square_length_of_y);
+        System.out.println("length of line:"+length_of_line);
 
 
 
